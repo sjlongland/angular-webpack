@@ -1,7 +1,5 @@
 'use strict';
 
-var fs = require('fs');
-
 module.exports = function() {
 
   var text = 'Example app for using AngularJS with Browserify - ' +
