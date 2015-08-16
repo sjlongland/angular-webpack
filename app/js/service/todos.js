@@ -39,7 +39,9 @@ module.exports = function() {
   };
 
   this.remove = function(todo) {
-    todos = todos.filter(function(t) { return t !== todo; });
+    todos = todos.filter(function(t) { 
+      return t !== todo; 
+    });
   };
 
   function createDate(year, month, day, hour, minute) {

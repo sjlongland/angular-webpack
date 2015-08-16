@@ -7,13 +7,15 @@ module.exports = {
         path: path.join(__dirname, 'app/dist'),
         filename: 'app.js'
     },
-    preLoaders: [
-        {
-            test: /\.js$/,
-            exclude: /node_modules/,
-            loader: 'eslint-loader'
-        }
-    ],
+    module: {
+        preLoaders: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'eslint-loader'
+            }
+        ]
+    },
     eslint: {
         configFile: './.eslintrc'
     },
