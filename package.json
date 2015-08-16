@@ -15,22 +15,10 @@
     "jquery": "^2.1.1"
   },
   "devDependencies": {
-    "browserify": "^3.44.2",
     "chai": "^1.9.1",
     "eslint": "^1.1.0",
     "eslint-loader": "^1.0.0",
     "eslint-plugin-angular": "^0.4.0",
-    "glob": "^4.0.0",
-    "gulp": "^3.6.2",
-    "gulp-clean": "^0.2.4",
-    "gulp-connect": "^2.0.5",
-    "gulp-eslint": "^0.1.8",
-    "gulp-karma": "0.0.4",
-    "gulp-mocha": "^0.4.1",
-    "gulp-ngmin": "^0.2.0",
-    "gulp-protractor": "0.0.7",
-    "gulp-streamify": "0.0.5",
-    "gulp-uglify": "^0.2.1",
     "html-loader": "^0.3.0",
     "json-loader": "^0.5.2",
     "karma": "^0.12.16",
@@ -43,7 +31,6 @@
     "protractor": "^0.22.0",
     "sinon": "^1.9.1",
     "sinon-chai": "^2.5.0",
-    "vinyl-source-stream": "^0.1.1",
     "webpack": "^1.11.0",
     "webpack-dev-server": "^1.10.1"
   }
