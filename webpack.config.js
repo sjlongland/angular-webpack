@@ -1,8 +1,10 @@
+var path = require('path');
+
 module.exports = {
-    context: __dirname + '/app/js',
+    context: path.join(__dirname, 'app/js'),
     entry: './app.js',
     output: {
-        path: __dirname + '/dist/',
+        path: path.join(__dirname, 'dist'),
         filename: 'app.js'
     },
     preLoaders: [
