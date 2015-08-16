@@ -1,8 +1,8 @@
 {
-  "name": "angular-browserify-seed",
-  "version": "0.1.0",
-  "description": "Yet another example project with Angular, Browserify and Gulp",
-  "repository": "https://github.com/basti1302/angular-browserify-seed",
+  "name": "angular-webpack-seed",
+  "version": "0.2.0",
+  "description": "Yet another example project with AngularJS and webpack",
+  "repository": "https://github.com/britter/angular-webpack-seed",
   "scripts": {
     "postinstall": "./node_modules/protractor/bin/webdriver-manager update",
     "pretest": "./node_modules/protractor/bin/webdriver-manager start &",

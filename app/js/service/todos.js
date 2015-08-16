@@ -9,7 +9,7 @@ module.exports = function() {
   }, {
     title: 'Write blog post',
     due: createDate(0, 0, 1, 14, 0),
-    text: 'Write a blog post about how to integrate AngularJS and Browserify ' +
+    text: 'Write a blog post about how to integrate AngularJS and webpack ' +
       'for http://angularjs.de/',
   }, {
     title: 'Finish talk proposal',
