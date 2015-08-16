@@ -5,7 +5,8 @@ module.exports = {
     entry: './app.js',
     output: {
         path: path.join(__dirname, 'app/dist'),
-        filename: 'app.js'
+        filename: 'app.js',
+        publicPath: '/dist/'
     },
     module: {
         preLoaders: [
