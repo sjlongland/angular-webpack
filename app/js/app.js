@@ -17,11 +17,13 @@ app.config(function($routeProvider) {
 
   $routeProvider.when('/todos', {
     templateUrl: 'views/todos.html',
-    controller: 'TodoCtrl'
+    controller: 'TodoController',
+    controllerAs: 'TodoController'
   })
   .when('/imprint', {
     templateUrl: 'views/imprint.html',
-    controller: 'ImprintCtrl'
+    controller: 'ImprintController',
+    controllerAs: 'ImprintController'
   })
   .otherwise({
     redirectTo: '/todos'

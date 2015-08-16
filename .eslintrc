@@ -1,4 +1,5 @@
 {
+  "plugins": [ "angular" ],
   "env": {
     "browser": true
   },
@@ -12,6 +13,10 @@
     "yoda": 0,
     "no-console": 1,
     "curly": [2, "multi-line"],
-    "new-cap": 0
+    "new-cap": 0,
+
+    // angular rules
+    "angular/ng_module_setter" : 0,
+    "angular/ng_module_getter" : 0
   }
 }
