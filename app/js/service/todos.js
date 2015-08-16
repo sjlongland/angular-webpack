@@ -9,7 +9,7 @@ module.exports = function() {
   }, {
     title: 'Write blog post',
     due: createDate(0, 0, 1, 14, 0),
-    text: 'Write a blog post about how to integrate AngularJS and Browserify ' +
+    text: 'Write a blog post about how to integrate AngularJS and webpack ' +
       'for http://angularjs.de/',
   }, {
     title: 'Finish talk proposal',
@@ -39,7 +39,9 @@ module.exports = function() {
   };
 
   this.remove = function(todo) {
-    todos = todos.filter(function(t) { return t !== todo; });
+    todos = todos.filter(function(t) { 
+      return t !== todo; 
+    });
   };
 
   function createDate(year, month, day, hour, minute) {

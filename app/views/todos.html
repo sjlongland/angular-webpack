@@ -1,7 +1,7 @@
 <div class="grid-20 grid-parent">
   <div class="margins rounded-box text-on-blue">
     <div class="sidebar-heading sidebar-heading-skin dark-blue-bg">Your Todos</div>
-    <div ng-controller="TodoListCtrl">
+    <div ng-controller="TodoListController">
       <a ng-repeat="todo in getTodos()"
         ng-click="select(todo)"
         class="sidebar-item-borders sidebar-item dark-blue-bg"
@@ -13,7 +13,7 @@
   </div>
 </div>
 
-<div ng-controller="EditTodoCtrl" class="grid-80 grid-parent">
+<div ng-controller="EditTodoController" class="grid-80 grid-parent">
   <form novalidate role="form">
 
     <div class="margins padding rounded-box dark-blue-bg text-on-blue">

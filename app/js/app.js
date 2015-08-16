@@ -1,7 +1,6 @@
 'use strict';
 
 require('es5-shim');
-require('es5-sham');
 
 require('jquery');
 var angular = require('angular');
@@ -9,7 +8,7 @@ require('angular-route');
 
 var app = angular.module('todoApp', [ 'ngRoute' ]);
 
-app.constant('VERSION', require('../../package.json').version);
+app.constant('VERSION', require('json!../../package.json').version);
 
 require('./service');
 require('./controller');
@@ -17,14 +16,16 @@ require('./controller');
 app.config(function($routeProvider) {
 
   $routeProvider.when('/todos', {
-    templateUrl: 'views/todos.html',
-    controller: 'TodoCtrl',
+    template: require('../views/todos.html'),
+    controller: 'TodoController',
+    controllerAs: 'TodoController'
   })
   .when('/imprint', {
-    templateUrl: 'views/imprint.html',
-    controller: 'ImprintCtrl',
+    template: require('../views/imprint.html'),
+    controller: 'ImprintController',
+    controllerAs: 'ImprintController'
   })
   .otherwise({
-    redirectTo: '/todos',
+    redirectTo: '/todos'
   });
 });
