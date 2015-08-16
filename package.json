@@ -39,7 +39,9 @@
     "protractor": "^0.22.0",
     "sinon": "^1.9.1",
     "sinon-chai": "^2.5.0",
-    "vinyl-source-stream": "^0.1.1"
+    "vinyl-source-stream": "^0.1.1",
+    "webpack": "^1.11.0",
+    "webpack-dev-server": "^1.10.1"
   },
   "browser": {
     "angular": "./app/js/third-party/angular/angular-index.js",

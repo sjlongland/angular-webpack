@@ -4,7 +4,7 @@ module.exports = {
     context: path.join(__dirname, 'app/js'),
     entry: './app.js',
     output: {
-        path: path.join(__dirname, 'dist'),
+        path: path.join(__dirname, 'app/dist'),
         filename: 'app.js'
     },
     preLoaders: [
@@ -17,5 +17,8 @@ module.exports = {
     eslint: {
         configFile: './.eslintrc'
     },
-    devtool: 'source-map'
+    devtool: 'source-map',
+    devServer: {
+        contentBase: path.join(__dirname, 'app')
+    }
 };
