@@ -16,12 +16,12 @@ require('./controller');
 app.config(function($routeProvider) {
 
   $routeProvider.when('/todos', {
-    templateUrl: 'views/todos.html',
+    template: require('../views/todos.html'),
     controller: 'TodoController',
     controllerAs: 'TodoController'
   })
   .when('/imprint', {
-    templateUrl: 'views/imprint.html',
+    template: require('../views/imprint.html'),
     controller: 'ImprintController',
     controllerAs: 'ImprintController'
   })

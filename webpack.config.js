@@ -14,6 +14,12 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: 'eslint-loader'
             }
+        ],
+        loaders: [
+            {
+                test: /\.html$/,
+                loader: 'html-loader'
+            }
         ]
     },
     eslint: {
