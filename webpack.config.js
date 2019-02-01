@@ -9,24 +9,29 @@ module.exports = {
         publicPath: '/dist/'
     },
     module: {
-        preLoaders: [
+        rules: [
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: 'eslint-loader'
-            }
-        ],
-        loaders: [
+                use: [
+                    {
+                        loader: 'ng-annotate-loader'
+                    },
+                    {
+                        loader: 'eslint-loader'
+                    }
+                ]
+            },
             {
                 test: /\.html$/,
-                loader: 'html-loader'
+                use: [
+                    'html-loader'
+                ]
             }
         ]
     },
-    eslint: {
-        configFile: './.eslintrc'
-    },
     devtool: 'source-map',
+    mode: 'production',
     devServer: {
         contentBase: path.join(__dirname, 'app')
     }
