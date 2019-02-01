@@ -16,6 +16,9 @@ app.controller('EditTodoController', function($scope, TodoService) {
   };
 
   $scope.edit = function() {
+    if (!$scope.$parent.todo) {
+      return;
+    }
     if ($scope.editMode) {
       return;
     }
