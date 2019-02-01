@@ -6,20 +6,21 @@
   "scripts": {
     "postinstall": "./node_modules/protractor/bin/webdriver-manager update",
     "pretest": "./node_modules/protractor/bin/webdriver-manager start &",
-    "test": "./node_modules/gulp/bin/gulp.js"
+    "test": "./node_modules/gulp/bin/gulp.js",
+    "build": "webpack --config webpack.config.js"
   },
   "dependencies": {
     "angular": "^1.4.4",
     "angular-route": "^1.4.4",
-    "es5-shim": "^3.0.2",
-    "jquery": "^2.1.1"
+    "es5-shim": "^4.0.0",
+    "jquery": "^3.3.1"
   },
   "devDependencies": {
     "chai": "^1.9.1",
-    "eslint": "^1.1.0",
-    "eslint-loader": "^1.0.0",
+    "eslint": "^5.12.1",
+    "eslint-loader": "^2.1.1",
     "eslint-plugin-angular": "^0.4.0",
-    "html-loader": "^0.3.0",
+    "html-loader": "^0.5.5",
     "json-loader": "^0.5.2",
     "karma": "^0.12.16",
     "karma-chai": "^0.1.0",
@@ -31,7 +32,9 @@
     "protractor": "^0.22.0",
     "sinon": "^1.9.1",
     "sinon-chai": "^2.5.0",
-    "webpack": "^1.11.0",
-    "webpack-dev-server": "^1.10.1"
+    "ng-annotate-loader": "^0.6.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
   }
 }
