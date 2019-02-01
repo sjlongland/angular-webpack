@@ -1,5 +1,6 @@
 'use strict';
+var app = require('angular').module('todoApp');
 
-module.exports = function($scope, ImprintService) {
-  $scope.text = ImprintService.getText();
-};
+app.controller('ImprintController', function($scope, ImprintService) {
+	$scope.text = ImprintService.getText();
+});

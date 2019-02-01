@@ -1,6 +1,7 @@
 'use strict';
+var app = require('angular').module('todoApp');
 
-module.exports = function($scope, TodoService) {
+app.controller('TodoListController', function($scope, TodoService) {
 
   $scope.getTodos = TodoService.getTodos.bind(TodoService);
 
@@ -16,4 +17,4 @@ module.exports = function($scope, TodoService) {
     }
   };
 
-};
+});

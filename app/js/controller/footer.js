@@ -1,5 +1,6 @@
 'use strict';
+var app = require('angular').module('todoApp');
 
-module.exports = function($scope, VERSION) {
+app.controller('FooterController', function($scope, VERSION) {
   $scope.version = VERSION;
-};
+});

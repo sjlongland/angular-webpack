@@ -8,13 +8,12 @@ require('angular-route');
 
 var app = angular.module('todoApp', [ 'ngRoute' ]);
 
-app.constant('VERSION', require('json!../../package.json').version);
+app.constant('VERSION', require('../../package.json').version);
 
 require('./service');
 require('./controller');
 
 app.config(function($routeProvider) {
-
   $routeProvider.when('/todos', {
     template: require('../views/todos.html'),
     controller: 'TodoController',

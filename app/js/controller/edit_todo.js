@@ -1,6 +1,7 @@
 'use strict';
+var app = require('angular').module('todoApp');
 
-module.exports = function($scope, TodoService) {
+app.controller('EditTodoController', function($scope, TodoService) {
 
   var backupForCancel;
   var creatingNew = false;
@@ -59,4 +60,4 @@ module.exports = function($scope, TodoService) {
       text: todo.text,
     };
   }
-};
+});
