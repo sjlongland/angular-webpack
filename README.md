@@ -28,13 +28,15 @@ a few things:
 3. HTML files are passed through
    [`html-loader`](https://github.com/webpack-contrib/html-loader)
    which parses the HTML and identifies other assets that `webpack` needs to process.
-4. `webpack` then takes the annotated and linted JavaScript, and the HTML and compiles
-   a few output files which it places in `app/dist`.
+4. CSS files referenced by the JavaScript (using `require` statements) will be picked up
+   by [`css-loader`](https://www.npmjs.com/package/css-loader) then fed into
+   [`mini-css-extract-plugin`](https://www.npmjs.com/package/mini-css-extract-plugin)
+   to organise the CSS rules into files for each JS module.
+5. Any images referenced by the JavaScript modules or CSS will be handled by
+   [`file-loader`](https://www.npmjs.com/package/file-loader).
+6. `webpack` then takes all of the above, minifies it and places in `dist`.
 
 ## Changes to make
-
-* I'd like to split up `app` into `src` and `dist` directories -- this will
-  require using `file-loader` to copy those files across to the output directory.
 
 * Tests are a really good idea, but the original approach didn't wish to behave
   on my system.  Researching how `protractor`+`mocha`+`karma`+`selenium` interact to
