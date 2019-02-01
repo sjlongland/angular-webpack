@@ -4,5 +4,4 @@ node_modules
 *.swp
 *.un~
 
-app/ngmin
-app/dist
+dist
