@@ -13,6 +13,14 @@ app.constant('VERSION', require('../../package.json').version);
 require('./service');
 require('./controller');
 
+/*
+ * This feels odd to 'include' CSS into JavaScript, but it tells css-loader
+ * that these files are important to this piece of JavaScript code.
+ */
+require('../css/app.css');
+require('../css/normalize.css');
+require('../css/unsemantic-grid-responsive.css');
+
 app.config(function($routeProvider) {
   $routeProvider.when('/todos', {
     template: require('../views/todos.html'),
